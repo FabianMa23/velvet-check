@@ -105,7 +105,7 @@
       var v=(document.getElementById("emailInput").value||"").trim();
       var subject=encodeURIComponent("Velvet Check Anfrage");
       var body=v?("&body="+encodeURIComponent("Meine E-Mail: "+v+"\n\nIch interessiere mich für einen Velvet Check.")):"";
-      window.location.href="mailto:hello@velvetcheck.de?subject="+subject+body;
+      window.location.href="mailto:hello@velvet-check.de?subject="+subject+body;
     });
   }
 
