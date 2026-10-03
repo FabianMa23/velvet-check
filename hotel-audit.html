@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hotel-Audit für Hotelgruppen &amp; Ketten | Velvet Check</title>
+<meta name="description" content="Hotel-Audit für Hotelgruppen und Ketten: einheitliche Qualitätsprüfung aller Häuser, vergleichbarer Velvet Score, Wettbewerber-Benchmark.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.velvet-check.de/hotel-audit">
+<meta name="google-site-verification" content="94D0KsUUTC9XBu6_mIeiap3ODud5BX7VDFF2n5zaIJU">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Velvet Check">
+<meta property="og:locale" content="de_DE">
+<meta property="og:url" content="https://www.velvet-check.de/hotel-audit">
+<meta property="og:title" content="Hotel-Audit für Hotelgruppen &amp; Ketten | Velvet Check">
+<meta property="og:description" content="Hotel-Audit für Hotelgruppen und Ketten: einheitliche Qualitätsprüfung aller Häuser, vergleichbarer Velvet Score, Wettbewerber-Benchmark.">
+<meta property="og:image" content="https://www.velvet-check.de/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#08080b">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="stylesheet" href="/assets/site.css?v=345d61bf">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Service", "name": "Hotel-Audit für Hotelgruppen", "serviceType": "Hotel-Audit und Qualitätsprüfung", "description": "Hotel-Audit für Hotelgruppen und Ketten: einheitliche Qualitätsprüfung aller Häuser, vergleichbarer Velvet Score, Wettbewerber-Benchmark.", "url": "https://www.velvet-check.de/hotel-audit", "areaServed": {"@type": "Country", "name": "Deutschland"}, "provider": {"@type": "ProfessionalService", "name": "Velvet Check", "description": "Unabhängiger Mystery-Guest-Service für Luxushotels: standardisierte Hoteltests mit 130+ Datenpunkten in 6 Kategorien und dem Velvet Score.", "url": "https://www.velvet-check.de/", "logo": "https://www.velvet-check.de/favicon.svg", "image": "https://www.velvet-check.de/assets/og-image.png", "email": "hello@velvet-check.de", "telephone": "+49 155 10084711", "priceRange": "ab 890 €", "address": {"@type": "PostalAddress", "streetAddress": "Rigaerstraße 18B", "postalCode": "10247", "addressLocality": "Berlin", "addressCountry": "DE"}, "areaServed": {"@type": "Country", "name": "Deutschland"}, "founder": {"@type": "Person", "name": "Fabian Matthies"}}, "offers": {"@type": "Offer", "price": "890", "priceCurrency": "EUR", "description": "Ab 890 € (Quick Check), Übernachtung inklusive"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Startseite", "item": "https://www.velvet-check.de/"}, {"@type": "ListItem", "position": 2, "name": "Hotel-Audit für Hotelgruppen", "item": "https://www.velvet-check.de/hotel-audit"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Was ist ein Hotel-Audit?", "acceptedAnswer": {"@type": "Answer", "text": "Ein Hotel-Audit ist eine strukturierte Qualitätsprüfung eines Hotels. Bei Velvet Check erfolgt sie verdeckt durch einen Mystery Guest, sodass die tatsächliche Gästeerfahrung bewertet wird – nicht eine vorbereitete Vorführung."}}, {"@type": "Question", "name": "Wie werden mehrere Häuser vergleichbar?", "acceptedAnswer": {"@type": "Answer", "text": "Jedes Haus wird nach denselben 130+ Datenpunkten und derselben Gewichtung der sechs Kategorien geprüft. Der Velvet Score ist dadurch über alle Standorte vergleichbar."}}, {"@type": "Question", "name": "Was ist im Full Audit enthalten?", "acceptedAnswer": {"@type": "Answer", "text": "Zwei bis drei Übernachtungen, ein Wettbewerber-Benchmark, eine Management-Präsentation der Ergebnisse und ein Follow-up nach drei Monaten."}}, {"@type": "Question", "name": "Können Markenstandards einer Gruppe berücksichtigt werden?", "acceptedAnswer": {"@type": "Answer", "text": "Sprechen Sie uns an. Individuelle Pakete und Schwerpunkte sind auf Anfrage möglich."}}]}</script>
+</head>
+<body>
+
+<canvas id="gl"></canvas>
+<div class="scrim"></div>
+<div class="grain"></div>
+
+<header class="nav" id="nav">
+  <a class="brand" href="/" data-cursor>
+    <span class="mark"></span><span class="word">VELVET CHECK</span>
+  </a>
+  <nav class="nav-links">
+    <a href="/#leistungen" data-cursor class="active">Leistungen</a>
+    <a href="/#pakete" data-cursor class="active">Pakete</a>
+    <a href="/ratgeber" data-cursor>Ratgeber</a>
+    <a href="/ueber-uns" data-cursor>Über uns</a>
+    <a href="/#kontakt" data-cursor class="active">Kontakt</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" data-cursor aria-label="Menü öffnen">Menü <span class="bars"><span></span><span></span></span></button>
+</header>
+
+<nav class="overlay" id="overlay" aria-hidden="true">
+  <button class="close" id="closeBtn" data-cursor>Schließen</button>
+  <a href="/#leistungen" class="ov-link" data-cursor>Leistungen</a>
+  <a href="/#pakete" class="ov-link" data-cursor>Pakete</a>
+  <a href="/ratgeber" class="ov-link" data-cursor>Ratgeber</a>
+  <a href="/ueber-uns" class="ov-link" data-cursor>Über uns</a>
+  <a href="/#kontakt" class="ov-link" data-cursor>Kontakt</a>
+</nav>
+
+<main class="wrap" id="top">
+  <!-- HERO -->
+  <section class="page-hero pad">
+    <div class="narrow" style="width:100%">
+      <nav class="breadcrumb" aria-label="Brotkrumen"><a href="/" data-cursor>Startseite</a><span class="sep">/</span><span aria-current="page">Hotel-Audit für Hotelgruppen</span></nav>
+      <p class="eyebrow line-before" style="margin-bottom:1.6rem">Für Hotelgruppen &amp; Ketten</p>
+      <h1 class="page-title">Hotel-Audit &amp; Qualitätsprüfung: <span class="gold">vergleichbar über alle Häuser</span></h1>
+      <p class="hero-sub" style="margin-top:1.8rem">Mehrere Hotels, ein Maßstab. Velvet Check prüft jedes Haus Ihrer Gruppe verdeckt nach derselben Methodik – damit Sie Qualität zwischen Standorten objektiv vergleichen und gezielt steuern können.</p>
+      <div class="hero-cta">
+        <a href="/#kontakt" class="btn" data-cursor>Audit anfragen</a>
+        <a href="/#pakete" class="btn ghost" data-cursor>Pakete ansehen</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- INHALT -->
+  <section class="section pad">
+    <div class="narrow">
+      <article class="prose reveal">
+        <h2>Die Herausforderung: Qualität über mehrere Standorte steuern</h2>
+        <p>Je mehr Häuser eine Gruppe führt, desto schwieriger wird es, einheitliche Standards sicherzustellen. Jedes Hotel hat sein eigenes Team, seine eigenen Routinen und seine eigenen blinden Flecken. Interne Reports und angekündigte Audits zeigen zudem häufig einen vorbereiteten Zustand – nicht den Alltag, den Gäste erleben.</p>
+        <p>Für das Management bedeutet das: Entscheidungen über Investitionen, Schulungen oder Prozesse beruhen oft auf Eindrücken statt auf vergleichbaren Daten.</p>
+
+        <h2>Die Lösung: ein verdecktes Hotel-Audit mit einheitlichem Score</h2>
+        <p>Bei einem Velvet Check Audit übernachtet ein anonymer Tester in jedem Haus – unangekündigt und wie ein regulärer Gast. Bewertet werden mehr als 130 Datenpunkte in sechs gewichteten Kategorien. Weil Methodik und Gewichtung für alle Hotels identisch sind, ist der resultierende Velvet Score direkt vergleichbar: zwischen Ihren Standorten, über die Zeit und gegenüber dem Wettbewerb.</p>
+        <ul>
+          <li><strong>Ankunft &amp; Empfang</strong> – 15 %</li>
+          <li><strong>Zimmer &amp; Suite</strong> – 25 %</li>
+          <li><strong>Service &amp; Personal</strong> – 25 %</li>
+          <li><strong>Gastronomie</strong> – 15 %</li>
+          <li><strong>Wellness &amp; Extras</strong> – 10 %</li>
+          <li><strong>Digitales Erlebnis</strong> – 10 %</li>
+        </ul>
+
+        <h2>Was das Full Audit umfasst</h2>
+        <p>Für Hotelgruppen und strategische Fragestellungen ist das <strong>Full Audit</strong> ab 2.890 € pro Haus konzipiert:</p>
+        <ul>
+          <li>Zwei bis drei Übernachtungen für ein vollständiges Bild – auch über mehrere Schichten und Tageszeiten hinweg.</li>
+          <li>Wettbewerber-Benchmark: vergleichbare Häuser werden nach denselben Kriterien geprüft.</li>
+          <li>Management-Präsentation der Ergebnisse für Geschäftsführung und Direktion.</li>
+          <li>Follow-up nach drei Monaten, um die Wirkung umgesetzter Maßnahmen zu messen.</li>
+        </ul>
+        <p>Übernachtungskosten sind inklusive. Für Gruppen mit mehreren Häusern erstellen wir auf Anfrage individuelle Pakete.</p>
+
+        <h2>Wie Hotelgruppen die Ergebnisse nutzen</h2>
+        <p><strong>Standorte vergleichen:</strong> Der Velvet Score zeigt auf einen Blick, welche Häuser Ihren Markenanspruch einlösen und wo Handlungsbedarf besteht.</p>
+        <p><strong>Prioritäten setzen:</strong> Die Bewertung auf Kategorieebene macht sichtbar, ob ein Thema ein einzelnes Haus betrifft oder sich durch die gesamte Gruppe zieht – etwa beim Check-in-Prozess oder beim digitalen Erlebnis.</p>
+        <p><strong>Fortschritt messen:</strong> Wiederholte Audits und das Follow-up zeigen, ob Schulungen und Investitionen tatsächlich beim Gast ankommen.</p>
+
+        <h2>Unabhängigkeit als Grundlage</h2>
+        <p>Velvet Check ist keinem Hotel, keiner Kette und keiner Plattform verpflichtet. Die Ergebnisse gehören ausschließlich Ihnen. Diese Unabhängigkeit ist die Voraussetzung dafür, dass ein Audit nicht bestätigt, was man hören möchte, sondern zeigt, was Gäste erleben.</p>
+        <p>Sie betreiben ein einzelnes Haus? Dann ist unser <a href="/mystery-guest-hotel" data-cursor>Mystery Guest für Hotels</a> der passende Einstieg.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section pad" id="faq">
+    <div class="narrow">
+      <div class="sec-head reveal">
+        <p class="eyebrow">FAQ</p>
+        <h2 class="h-sec">Fragen zum <span class="accent">Hotel-Audit</span></h2>
+      </div>
+      <div class="faq-list reveal">
+        <div class="faq-item">
+          <button class="faq-q" data-cursor>Was ist ein Hotel-Audit? <span class="pm">+</span></button>
+          <div class="faq-a"><p>Ein Hotel-Audit ist eine strukturierte Qualitätsprüfung eines Hotels. Bei Velvet Check erfolgt sie verdeckt durch einen Mystery Guest, sodass die tatsächliche Gästeerfahrung bewertet wird – nicht eine vorbereitete Vorführung.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" data-cursor>Wie werden mehrere Häuser vergleichbar? <span class="pm">+</span></button>
+          <div class="faq-a"><p>Jedes Haus wird nach denselben 130+ Datenpunkten und derselben Gewichtung der sechs Kategorien geprüft. Der Velvet Score ist dadurch über alle Standorte vergleichbar.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" data-cursor>Was ist im Full Audit enthalten? <span class="pm">+</span></button>
+          <div class="faq-a"><p>Zwei bis drei Übernachtungen, ein Wettbewerber-Benchmark, eine Management-Präsentation der Ergebnisse und ein Follow-up nach drei Monaten.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" data-cursor>Können Markenstandards einer Gruppe berücksichtigt werden? <span class="pm">+</span></button>
+          <div class="faq-a"><p>Sprechen Sie uns an. Individuelle Pakete und Schwerpunkte sind auf Anfrage möglich.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact pad">
+    <div class="narrow">
+      <p class="eyebrow reveal">Bereit?</p>
+      <h2 class="reveal">Starten Sie Ihren ersten <span class="accent">Velvet Check</span></h2>
+      <p class="sub reveal">Wir melden uns innerhalb von 24 Stunden mit einem individuellen Angebot.</p>
+      <div class="reveal"><a href="/#kontakt" class="btn" data-cursor>Jetzt anfragen</a></div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="foot pad">
+    <div class="narrow">
+      <div class="foot-grid">
+        <a class="foot-brand" href="/" style="text-decoration:none;color:inherit" data-cursor><span class="mark"></span><span class="word">VELVET CHECK</span></a>
+        <div class="foot-links">
+          <a href="/#prozess" data-cursor>Prozess</a>
+          <a href="/#kriterien" data-cursor>Kriterien</a>
+          <a href="/#pakete" data-cursor>Pakete</a>
+          <a href="/ratgeber" data-cursor>Ratgeber</a>
+          <a href="/ueber-uns" data-cursor>Über uns</a>
+          <a href="/#kontakt" data-cursor>Kontakt</a>
+          <a href="mailto:hello@velvet-check.de" data-cursor>E-Mail</a>
+        </div>
+      </div>
+      <div class="foot-cols">
+        <div class="foot-col">
+          <p class="foot-col-title">Leistungen</p>
+          <div class="foot-col-links">
+            <a href="/mystery-guest-hotel" data-cursor>Mystery Guest für Hotels</a>
+            <a href="/hotel-audit" data-cursor>Hotel-Audit für Hotelgruppen</a>
+            <a href="/hotelbewertung-reiseagenturen" data-cursor>Für Reiseagenturen &amp; Corporate Travel</a>
+          </div>
+        </div>
+        <div class="foot-col">
+          <p class="foot-col-title">Ratgeber</p>
+          <div class="foot-col-links">
+            <a href="/ratgeber/was-ist-ein-mystery-guest" data-cursor>Was ist ein Mystery Guest im Hotel? Ablauf, Kosten und Nutzen</a>
+            <a href="/ratgeber/servicequalitaet-im-hotel-messen" data-cursor>Servicequalität im Hotel messen</a>
+            <a href="/ratgeber/mystery-check-vs-online-bewertungen" data-cursor>Mystery Check oder Online-Bewertungen</a>
+          </div>
+        </div>
+      </div>
+      <div class="foot-legal">
+        <p class="copyright">© 2026 Velvet Check · Berlin · Independent Luxury Hotel Testing</p>
+        <div class="legal-links">
+          <a href="/impressum" data-cursor>Impressum</a>
+          <a href="/datenschutz" data-cursor>Datenschutz</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</main>
+
+<div class="cur-ring" id="curRing"></div>
+<div class="cur-dot" id="curDot"></div>
+
+<script src="/assets/three.min.js"></script>
+<script src="/assets/site.js?v=06188c5e"></script>
+</body>
+</html>

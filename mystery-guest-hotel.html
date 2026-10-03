@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mystery Guest für Hotels – anonymer Hoteltest | Velvet Check</title>
+<meta name="description" content="Mystery Guest für Hotels: anonymer Hoteltest mit 130+ Datenpunkten, 6 Kategorien und Velvet Score. Report in 48h, buchbar bis 24h vorher.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.velvet-check.de/mystery-guest-hotel">
+<meta name="google-site-verification" content="94D0KsUUTC9XBu6_mIeiap3ODud5BX7VDFF2n5zaIJU">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Velvet Check">
+<meta property="og:locale" content="de_DE">
+<meta property="og:url" content="https://www.velvet-check.de/mystery-guest-hotel">
+<meta property="og:title" content="Mystery Guest für Hotels – anonymer Hoteltest | Velvet Check">
+<meta property="og:description" content="Mystery Guest für Hotels: anonymer Hoteltest mit 130+ Datenpunkten, 6 Kategorien und Velvet Score. Report in 48h, buchbar bis 24h vorher.">
+<meta property="og:image" content="https://www.velvet-check.de/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#08080b">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="stylesheet" href="/assets/site.css?v=345d61bf">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Service", "name": "Mystery Guest für Hotels", "serviceType": "Mystery Guest Hoteltest", "description": "Mystery Guest für Hotels: anonymer Hoteltest mit 130+ Datenpunkten, 6 Kategorien und Velvet Score. Report in 48h, buchbar bis 24h vorher.", "url": "https://www.velvet-check.de/mystery-guest-hotel", "areaServed": {"@type": "Country", "name": "Deutschland"}, "provider": {"@type": "ProfessionalService", "name": "Velvet Check", "description": "Unabhängiger Mystery-Guest-Service für Luxushotels: standardisierte Hoteltests mit 130+ Datenpunkten in 6 Kategorien und dem Velvet Score.", "url": "https://www.velvet-check.de/", "logo": "https://www.velvet-check.de/favicon.svg", "image": "https://www.velvet-check.de/assets/og-image.png", "email": "hello@velvet-check.de", "telephone": "+49 155 10084711", "priceRange": "ab 890 €", "address": {"@type": "PostalAddress", "streetAddress": "Rigaerstraße 18B", "postalCode": "10247", "addressLocality": "Berlin", "addressCountry": "DE"}, "areaServed": {"@type": "Country", "name": "Deutschland"}, "founder": {"@type": "Person", "name": "Fabian Matthies"}}, "offers": {"@type": "Offer", "price": "890", "priceCurrency": "EUR", "description": "Ab 890 € (Quick Check), Übernachtung inklusive"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Startseite", "item": "https://www.velvet-check.de/"}, {"@type": "ListItem", "position": 2, "name": "Mystery Guest für Hotels", "item": "https://www.velvet-check.de/mystery-guest-hotel"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Was macht ein Mystery Guest im Hotel?", "acceptedAnswer": {"@type": "Answer", "text": "Ein Mystery Guest übernachtet anonym wie ein regulärer Gast und bewertet dabei systematisch alle Touchpoints – von der Ankunft über Zimmer, Service und Gastronomie bis zum Check-out."}}, {"@type": "Question", "name": "Wie oft sollte ein Hotel einen Mystery Check machen?", "acceptedAnswer": {"@type": "Answer", "text": "Bewährt haben sich regelmäßige Checks, zum Beispiel zweimal im Jahr, sowie zusätzliche Checks nach Veränderungen wie neuem Personal, Renovierungen oder neuen Serviceabläufen."}}, {"@type": "Question", "name": "Erfahren meine Mitarbeitenden von dem Test?", "acceptedAnswer": {"@type": "Answer", "text": "Nein. Nur Sie als Auftraggeber wissen davon. Unsere Tester buchen und checken ein wie jeder andere Gast."}}, {"@type": "Question", "name": "Wie schnell bekomme ich die Ergebnisse?", "acceptedAnswer": {"@type": "Answer", "text": "Beim Quick Check erhalten Sie den Velvet Report innerhalb von 48 Stunden nach dem Aufenthalt."}}]}</script>
+</head>
+<body>
+
+<canvas id="gl"></canvas>
+<div class="scrim"></div>
+<div class="grain"></div>
+
+<header class="nav" id="nav">
+  <a class="brand" href="/" data-cursor>
+    <span class="mark"></span><span class="word">VELVET CHECK</span>
+  </a>
+  <nav class="nav-links">
+    <a href="/#leistungen" data-cursor class="active">Leistungen</a>
+    <a href="/#pakete" data-cursor class="active">Pakete</a>
+    <a href="/ratgeber" data-cursor>Ratgeber</a>
+    <a href="/ueber-uns" data-cursor>Über uns</a>
+    <a href="/#kontakt" data-cursor class="active">Kontakt</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" data-cursor aria-label="Menü öffnen">Menü <span class="bars"><span></span><span></span></span></button>
+</header>
+
+<nav class="overlay" id="overlay" aria-hidden="true">
+  <button class="close" id="closeBtn" data-cursor>Schließen</button>
+  <a href="/#leistungen" class="ov-link" data-cursor>Leistungen</a>
+  <a href="/#pakete" class="ov-link" data-cursor>Pakete</a>
+  <a href="/ratgeber" class="ov-link" data-cursor>Ratgeber</a>
+  <a href="/ueber-uns" class="ov-link" data-cursor>Über uns</a>
+  <a href="/#kontakt" class="ov-link" data-cursor>Kontakt</a>
+</nav>
+
+<main class="wrap" id="top">
+  <!-- HERO -->
+  <section class="page-hero pad">
+    <div class="narrow" style="width:100%">
+      <nav class="breadcrumb" aria-label="Brotkrumen"><a href="/" data-cursor>Startseite</a><span class="sep">/</span><span aria-current="page">Mystery Guest für Hotels</span></nav>
+      <p class="eyebrow line-before" style="margin-bottom:1.6rem">Für Hotels &amp; Direktoren</p>
+      <h1 class="page-title">Mystery Guest für Hotels: <span class="gold">So erleben Gäste Ihr Haus wirklich</span></h1>
+      <p class="hero-sub" style="margin-top:1.8rem">Velvet Check schickt einen anonymen Tester in Ihr Hotel, der wie ein ganz normaler Gast bucht, anreist und übernachtet. Das Ergebnis: ein ehrliches, strukturiertes Bild Ihrer Servicequalität – mit Velvet Score, Fotos und konkreten Empfehlungen.</p>
+      <div class="hero-cta">
+        <a href="/#kontakt" class="btn" data-cursor>Jetzt anfragen</a>
+        <a href="/#pakete" class="btn ghost" data-cursor>Pakete ansehen</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- INHALT -->
+  <section class="section pad">
+    <div class="narrow">
+      <article class="prose reveal">
+        <h2>Warum Hotels einen Mystery Guest einsetzen</h2>
+        <p>Als Direktorin oder Direktor kennen Sie Ihre Standards, Ihre Abläufe und Ihr Team. Was Sie selten sehen: wie all das bei einem Gast ankommt, der Sie nicht kennt. Gäste sprechen Probleme an der Rezeption oft nicht an – sie schreiben sie später in eine Bewertung oder buchen einfach nicht wieder.</p>
+        <p>Ein Mystery Guest schließt diese Lücke. Er erlebt Ihr Haus aus der Perspektive des Gastes, aber mit dem Blick eines Profis: systematisch, vollständig und nach festen Kriterien. So erfahren Sie, wo Ihr Anspruch im Alltag eingelöst wird – und wo er verloren geht.</p>
+
+        <h2>So läuft ein Mystery Check bei Velvet Check ab</h2>
+        <ol>
+          <li><strong>Anfrage:</strong> Sie wählen Paket und Zeitraum. Ein Check ist bis 24 Stunden im Voraus buchbar.</li>
+          <li><strong>Mystery Visit:</strong> Unser Tester bucht regulär und checkt anonym ein. Niemand im Haus weiß von der Prüfung – außer Ihnen.</li>
+          <li><strong>Analyse:</strong> Mehr als 130 Datenpunkte werden ausgewertet, gewichtet und zum Velvet Score verdichtet.</li>
+          <li><strong>Report:</strong> Sie erhalten den Velvet Report mit Score, Fotos und konkreten Handlungsempfehlungen – beim Quick Check innerhalb von 48 Stunden.</li>
+        </ol>
+
+        <h2>Was der Mystery Guest in Ihrem Hotel prüft</h2>
+        <p>Jeder Velvet Check bewertet sechs Kategorien, die gemeinsam das Gasterlebnis ausmachen. Die Gewichtung ist für alle Hotels gleich – deshalb sind die Ergebnisse vergleichbar.</p>
+        <ul>
+          <li><strong>Ankunft &amp; Empfang (15 %):</strong> erster Eindruck, Begrüßung, Check-in-Ablauf, Wartezeiten.</li>
+          <li><strong>Zimmer &amp; Suite (25 %):</strong> Sauberkeit, Zustand, Ausstattung, Details, Ruhe.</li>
+          <li><strong>Service &amp; Personal (25 %):</strong> Freundlichkeit, Aufmerksamkeit, Fachwissen, Umgang mit Wünschen.</li>
+          <li><strong>Gastronomie (15 %):</strong> Frühstück, Restaurant, Bar, Room Service.</li>
+          <li><strong>Wellness &amp; Extras (10 %):</strong> Spa, Fitness, Zusatzleistungen.</li>
+          <li><strong>Digitales Erlebnis (10 %):</strong> Website, Buchung, Kommunikation vor und nach dem Aufenthalt.</li>
+        </ul>
+
+        <h2>Der Velvet Score: ein Wert, der vergleichbar macht</h2>
+        <p>Aus allen Datenpunkten entsteht ein Gesamtwert von 0 bis 100. Er ordnet Ihr Haus in eine von vier Stufen ein: Standard (0–59), Excellent (60–79), Exceptional (80–94) und Velvet Class (95–100). So sehen Sie nicht nur, wo Sie heute stehen, sondern können Fortschritte über mehrere Checks hinweg verfolgen.</p>
+
+        <h2>Welches Paket passt zu Ihrem Hotel?</h2>
+        <p>Für einen ersten, schnellen Überblick eignet sich der <strong>Quick Check</strong> ab 890 €: eine Übernachtung, alle sechs Kategorien, mehr als 20 Fotos und der Report in 48 Stunden. Wer tiefer einsteigen möchte, wählt den <strong>Deep Dive</strong> ab 1.690 € mit zwei Übernachtungen, Detailanalyse inklusive Video, interaktivem Report und einem 30-minütigen Debrief-Call. Übernachtungskosten sind in allen Paketen enthalten.</p>
+        <p>Für strategische Fragestellungen mit Wettbewerbervergleich empfehlen wir das <a href="/hotel-audit" data-cursor>Hotel-Audit</a>.</p>
+
+        <h2>Unabhängig und diskret</h2>
+        <p>Velvet Check ist keinem Hotel, keiner Kette und keiner Buchungsplattform verpflichtet. Die Ergebnisse gehören ausschließlich Ihnen und werden nicht veröffentlicht. Ihr Team erfährt nur davon, wenn Sie es möchten – etwa, um gemeinsam an den Empfehlungen zu arbeiten.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section pad" id="faq">
+    <div class="narrow">
+      <div class="sec-head reveal">
+        <p class="eyebrow">FAQ</p>
+        <h2 class="h-sec">Fragen zum <span class="accent">Mystery Guest</span></h2>
+      </div>
+      <div class="faq-list reveal">
+        <div class="faq-item">
+          <button class="faq-q" data-cursor>Was macht ein Mystery Guest im Hotel? <span class="pm">+</span></button>
+          <div class="faq-a"><p>Ein Mystery Guest übernachtet anonym wie ein regulärer Gast und bewertet dabei systematisch alle Touchpoints – von der Ankunft über Zimmer, Service und Gastronomie bis zum Check-out.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" data-cursor>Wie oft sollte ein Hotel einen Mystery Check machen? <span class="pm">+</span></button>
+          <div class="faq-a"><p>Bewährt haben sich regelmäßige Checks, zum Beispiel zweimal im Jahr, sowie zusätzliche Checks nach Veränderungen wie neuem Personal, Renovierungen oder neuen Serviceabläufen.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" data-cursor>Erfahren meine Mitarbeitenden von dem Test? <span class="pm">+</span></button>
+          <div class="faq-a"><p>Nein. Nur Sie als Auftraggeber wissen davon. Unsere Tester buchen und checken ein wie jeder andere Gast.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" data-cursor>Wie schnell bekomme ich die Ergebnisse? <span class="pm">+</span></button>
+          <div class="faq-a"><p>Beim Quick Check erhalten Sie den Velvet Report innerhalb von 48 Stunden nach dem Aufenthalt.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact pad">
+    <div class="narrow">
+      <p class="eyebrow reveal">Bereit?</p>
+      <h2 class="reveal">Starten Sie Ihren ersten <span class="accent">Velvet Check</span></h2>
+      <p class="sub reveal">Wir melden uns innerhalb von 24 Stunden mit einem individuellen Angebot.</p>
+      <div class="reveal"><a href="/#kontakt" class="btn" data-cursor>Jetzt anfragen</a></div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="foot pad">
+    <div class="narrow">
+      <div class="foot-grid">
+        <a class="foot-brand" href="/" style="text-decoration:none;color:inherit" data-cursor><span class="mark"></span><span class="word">VELVET CHECK</span></a>
+        <div class="foot-links">
+          <a href="/#prozess" data-cursor>Prozess</a>
+          <a href="/#kriterien" data-cursor>Kriterien</a>
+          <a href="/#pakete" data-cursor>Pakete</a>
+          <a href="/ratgeber" data-cursor>Ratgeber</a>
+          <a href="/ueber-uns" data-cursor>Über uns</a>
+          <a href="/#kontakt" data-cursor>Kontakt</a>
+          <a href="mailto:hello@velvet-check.de" data-cursor>E-Mail</a>
+        </div>
+      </div>
+      <div class="foot-cols">
+        <div class="foot-col">
+          <p class="foot-col-title">Leistungen</p>
+          <div class="foot-col-links">
+            <a href="/mystery-guest-hotel" data-cursor>Mystery Guest für Hotels</a>
+            <a href="/hotel-audit" data-cursor>Hotel-Audit für Hotelgruppen</a>
+            <a href="/hotelbewertung-reiseagenturen" data-cursor>Für Reiseagenturen &amp; Corporate Travel</a>
+          </div>
+        </div>
+        <div class="foot-col">
+          <p class="foot-col-title">Ratgeber</p>
+          <div class="foot-col-links">
+            <a href="/ratgeber/was-ist-ein-mystery-guest" data-cursor>Was ist ein Mystery Guest im Hotel? Ablauf, Kosten und Nutzen</a>
+            <a href="/ratgeber/servicequalitaet-im-hotel-messen" data-cursor>Servicequalität im Hotel messen</a>
+            <a href="/ratgeber/mystery-check-vs-online-bewertungen" data-cursor>Mystery Check oder Online-Bewertungen</a>
+          </div>
+        </div>
+      </div>
+      <div class="foot-legal">
+        <p class="copyright">© 2026 Velvet Check · Berlin · Independent Luxury Hotel Testing</p>
+        <div class="legal-links">
+          <a href="/impressum" data-cursor>Impressum</a>
+          <a href="/datenschutz" data-cursor>Datenschutz</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</main>
+
+<div class="cur-ring" id="curRing"></div>
+<div class="cur-dot" id="curDot"></div>
+
+<script src="/assets/three.min.js"></script>
+<script src="/assets/site.js?v=06188c5e"></script>
+</body>
+</html>

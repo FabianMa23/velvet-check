@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hotelbewertung für Reiseagenturen &amp; Corporate Travel</title>
+<meta name="description" content="Unabhängige Hotelbewertung für Reiseagenturen, Travel Manager und Corporate Travel: anonym geprüft, vergleichbarer Score, Report in 48h.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.velvet-check.de/hotelbewertung-reiseagenturen">
+<meta name="google-site-verification" content="94D0KsUUTC9XBu6_mIeiap3ODud5BX7VDFF2n5zaIJU">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Velvet Check">
+<meta property="og:locale" content="de_DE">
+<meta property="og:url" content="https://www.velvet-check.de/hotelbewertung-reiseagenturen">
+<meta property="og:title" content="Hotelbewertung für Reiseagenturen &amp; Corporate Travel">
+<meta property="og:description" content="Unabhängige Hotelbewertung für Reiseagenturen, Travel Manager und Corporate Travel: anonym geprüft, vergleichbarer Score, Report in 48h.">
+<meta property="og:image" content="https://www.velvet-check.de/assets/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#08080b">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="stylesheet" href="/assets/site.css?v=345d61bf">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Service", "name": "Für Reiseagenturen & Corporate Travel", "serviceType": "Unabhängige Hotelbewertung für Reiseagenturen und Corporate Travel", "description": "Unabhängige Hotelbewertung für Reiseagenturen, Travel Manager und Corporate Travel: anonym geprüft, vergleichbarer Score, Report in 48h.", "url": "https://www.velvet-check.de/hotelbewertung-reiseagenturen", "areaServed": {"@type": "Country", "name": "Deutschland"}, "provider": {"@type": "ProfessionalService", "name": "Velvet Check", "description": "Unabhängiger Mystery-Guest-Service für Luxushotels: standardisierte Hoteltests mit 130+ Datenpunkten in 6 Kategorien und dem Velvet Score.", "url": "https://www.velvet-check.de/", "logo": "https://www.velvet-check.de/favicon.svg", "image": "https://www.velvet-check.de/assets/og-image.png", "email": "hello@velvet-check.de", "telephone": "+49 155 10084711", "priceRange": "ab 890 €", "address": {"@type": "PostalAddress", "streetAddress": "Rigaerstraße 18B", "postalCode": "10247", "addressLocality": "Berlin", "addressCountry": "DE"}, "areaServed": {"@type": "Country", "name": "Deutschland"}, "founder": {"@type": "Person", "name": "Fabian Matthies"}}, "offers": {"@type": "Offer", "price": "890", "priceCurrency": "EUR", "description": "Ab 890 € (Quick Check), Übernachtung inklusive"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Startseite", "item": "https://www.velvet-check.de/"}, {"@type": "ListItem", "position": 2, "name": "Für Reiseagenturen & Corporate Travel", "item": "https://www.velvet-check.de/hotelbewertung-reiseagenturen"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Warum sollte eine Reiseagentur Hotels testen lassen?", "acceptedAnswer": {"@type": "Answer", "text": "Ihre Empfehlung ist Ihr Versprechen an den Kunden. Ein unabhängiger, anonymer Check zeigt, ob ein Hotel dieses Versprechen tatsächlich einlöst – unabhängig von Marketingmaterial und Online-Bewertungen."}}, {"@type": "Question", "name": "Ist Velvet Check von Hotels bezahlt oder abhängig?", "acceptedAnswer": {"@type": "Answer", "text": "Nein. Wir sind keinem Hotel, keiner Kette und keiner Plattform verpflichtet. Unsere Bewertungen gehören ausschließlich unseren Auftraggebern."}}, {"@type": "Question", "name": "Können wir mehrere Hotels für ein Event vergleichen?", "acceptedAnswer": {"@type": "Answer", "text": "Ja. Da alle Hotels nach derselben Methodik bewertet werden, können Sie mehrere Häuser direkt über den Velvet Score vergleichen."}}, {"@type": "Question", "name": "Wie kurzfristig ist ein Check möglich?", "acceptedAnswer": {"@type": "Answer", "text": "Bis 24 Stunden vor dem gewünschten Aufenthalt."}}]}</script>
+</head>
+<body>
+
+<canvas id="gl"></canvas>
+<div class="scrim"></div>
+<div class="grain"></div>
+
+<header class="nav" id="nav">
+  <a class="brand" href="/" data-cursor>
+    <span class="mark"></span><span class="word">VELVET CHECK</span>
+  </a>
+  <nav class="nav-links">
+    <a href="/#leistungen" data-cursor class="active">Leistungen</a>
+    <a href="/#pakete" data-cursor class="active">Pakete</a>
+    <a href="/ratgeber" data-cursor>Ratgeber</a>
+    <a href="/ueber-uns" data-cursor>Über uns</a>
+    <a href="/#kontakt" data-cursor class="active">Kontakt</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" data-cursor aria-label="Menü öffnen">Menü <span class="bars"><span></span><span></span></span></button>
+</header>
+
+<nav class="overlay" id="overlay" aria-hidden="true">
+  <button class="close" id="closeBtn" data-cursor>Schließen</button>
+  <a href="/#leistungen" class="ov-link" data-cursor>Leistungen</a>
+  <a href="/#pakete" class="ov-link" data-cursor>Pakete</a>
+  <a href="/ratgeber" class="ov-link" data-cursor>Ratgeber</a>
+  <a href="/ueber-uns" class="ov-link" data-cursor>Über uns</a>
+  <a href="/#kontakt" class="ov-link" data-cursor>Kontakt</a>
+</nav>
+
+<main class="wrap" id="top">
+  <!-- HERO -->
+  <section class="page-hero pad">
+    <div class="narrow" style="width:100%">
+      <nav class="breadcrumb" aria-label="Brotkrumen"><a href="/" data-cursor>Startseite</a><span class="sep">/</span><span aria-current="page">Für Reiseagenturen &amp; Corporate Travel</span></nav>
+      <p class="eyebrow line-before" style="margin-bottom:1.6rem">Für Reiseagenturen &amp; Corporate Travel</p>
+      <h1 class="page-title">Unabhängige Hotelbewertung für <span class="gold">Reiseagenturen &amp; Corporate Travel</span></h1>
+      <p class="hero-sub" style="margin-top:1.8rem">Bevor Sie ein Hotel empfehlen, für Geschäftsreisen freigeben oder für ein Event buchen: Velvet Check prüft es anonym und liefert Ihnen eine unabhängige, vergleichbare Bewertung – mit Velvet Score, Fotos und klarer Einschätzung.</p>
+      <div class="hero-cta">
+        <a href="/#kontakt" class="btn" data-cursor>Jetzt anfragen</a>
+        <a href="/#pakete" class="btn ghost" data-cursor>Pakete ansehen</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- INHALT -->
+  <section class="section pad">
+    <div class="narrow">
+      <article class="prose reveal">
+        <h2>Ihre Empfehlung ist Ihr Versprechen</h2>
+        <p>Wenn eine Reiseagentur ein Hotel empfiehlt oder ein Travel Manager ein Haus in die Firmenliste aufnimmt, steht der eigene Name dafür ein. Läuft der Aufenthalt nicht wie erwartet, fällt das auf Sie zurück – nicht auf das Hotel.</p>
+        <p>Die üblichen Informationsquellen helfen dabei nur begrenzt: Hotelbeschreibungen und Fotos zeigen das Haus von seiner besten Seite, Online-Bewertungen sind subjektiv und schwer vergleichbar, und eigene Inspektionsbesuche werden oft angekündigt und entsprechend vorbereitet.</p>
+
+        <h2>Was eine unabhängige Hotelbewertung leistet</h2>
+        <p>Velvet Check bewertet Hotels verdeckt: Unsere Tester buchen und übernachten wie reguläre Gäste. Niemand im Hotel weiß von der Prüfung. Bewertet werden mehr als 130 Datenpunkte in sechs gewichteten Kategorien – von Ankunft und Empfang über Zimmer, Service und Gastronomie bis zu Wellness und dem digitalen Erlebnis rund um Buchung und Kommunikation.</p>
+        <p>Das Ergebnis ist der Velvet Score von 0 bis 100. Weil jedes Hotel nach derselben Methodik geprüft wird, können Sie verschiedene Häuser direkt miteinander vergleichen – etwa mehrere Kandidaten für ein Incentive, eine Tagung oder Ihr Firmenhotelprogramm.</p>
+
+        <h2>Typische Einsätze</h2>
+        <ul>
+          <li><strong>Reiseagenturen und Luxusreiseveranstalter:</strong> Hotels prüfen, bevor sie ins Portfolio aufgenommen oder an anspruchsvolle Kunden empfohlen werden.</li>
+          <li><strong>Corporate Travel Management:</strong> Häuser für Geschäftsreisende unabhängig bewerten, bevor sie in die Firmen-Hotelliste aufgenommen oder verlängert werden.</li>
+          <li><strong>Events, Tagungen und Incentives:</strong> mehrere Hotels für eine Veranstaltung vergleichen und die Auswahl mit belastbaren Daten begründen.</li>
+          <li><strong>Regelmäßige Überprüfung:</strong> bestehende Partnerhotels in Abständen erneut prüfen, um Qualitätsveränderungen früh zu erkennen.</li>
+        </ul>
+
+        <h2>Schnell, wenn es darauf ankommt</h2>
+        <p>Ein Velvet Check ist bis 24 Stunden im Voraus buchbar. Beim <strong>Quick Check</strong> ab 890 € erhalten Sie den Report innerhalb von 48 Stunden nach dem Aufenthalt – mit Score, Bewertung aller sechs Kategorien und mehr als 20 Fotos. Für eine tiefere Analyse mit Video, interaktivem Report und Debrief-Call steht der <strong>Deep Dive</strong> ab 1.690 € zur Verfügung. Übernachtungskosten sind jeweils inklusive.</p>
+
+        <h2>Wirklich unabhängig</h2>
+        <p>Velvet Check wird nicht von Hotels bezahlt und ist keiner Kette und keiner Buchungsplattform verpflichtet. Wir arbeiten ausschließlich in Ihrem Auftrag, und die Ergebnisse gehören allein Ihnen. Genau das macht die Bewertung für Ihre Entscheidung wertvoll.</p>
+        <p>Mehr zum Unterschied zwischen Bewertungsportalen und professionellen Checks lesen Sie in unserem Ratgeber <a href="/ratgeber/mystery-check-vs-online-bewertungen" data-cursor>Mystery Check oder Online-Bewertungen</a>.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section pad" id="faq">
+    <div class="narrow">
+      <div class="sec-head reveal">
+        <p class="eyebrow">FAQ</p>
+        <h2 class="h-sec">Fragen von <span class="accent">Agenturen &amp; Travel Managern</span></h2>
+      </div>
+      <div class="faq-list reveal">
+        <div class="faq-item">
+          <button class="faq-q" data-cursor>Warum sollte eine Reiseagentur Hotels testen lassen? <span class="pm">+</span></button>
+          <div class="faq-a"><p>Ihre Empfehlung ist Ihr Versprechen an den Kunden. Ein unabhängiger, anonymer Check zeigt, ob ein Hotel dieses Versprechen tatsächlich einlöst – unabhängig von Marketingmaterial und Online-Bewertungen.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" data-cursor>Ist Velvet Check von Hotels bezahlt oder abhängig? <span class="pm">+</span></button>
+          <div class="faq-a"><p>Nein. Wir sind keinem Hotel, keiner Kette und keiner Plattform verpflichtet. Unsere Bewertungen gehören ausschließlich unseren Auftraggebern.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" data-cursor>Können wir mehrere Hotels für ein Event vergleichen? <span class="pm">+</span></button>
+          <div class="faq-a"><p>Ja. Da alle Hotels nach derselben Methodik bewertet werden, können Sie mehrere Häuser direkt über den Velvet Score vergleichen.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" data-cursor>Wie kurzfristig ist ein Check möglich? <span class="pm">+</span></button>
+          <div class="faq-a"><p>Bis 24 Stunden vor dem gewünschten Aufenthalt.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact pad">
+    <div class="narrow">
+      <p class="eyebrow reveal">Bereit?</p>
+      <h2 class="reveal">Starten Sie Ihren ersten <span class="accent">Velvet Check</span></h2>
+      <p class="sub reveal">Wir melden uns innerhalb von 24 Stunden mit einem individuellen Angebot.</p>
+      <div class="reveal"><a href="/#kontakt" class="btn" data-cursor>Jetzt anfragen</a></div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="foot pad">
+    <div class="narrow">
+      <div class="foot-grid">
+        <a class="foot-brand" href="/" style="text-decoration:none;color:inherit" data-cursor><span class="mark"></span><span class="word">VELVET CHECK</span></a>
+        <div class="foot-links">
+          <a href="/#prozess" data-cursor>Prozess</a>
+          <a href="/#kriterien" data-cursor>Kriterien</a>
+          <a href="/#pakete" data-cursor>Pakete</a>
+          <a href="/ratgeber" data-cursor>Ratgeber</a>
+          <a href="/ueber-uns" data-cursor>Über uns</a>
+          <a href="/#kontakt" data-cursor>Kontakt</a>
+          <a href="mailto:hello@velvet-check.de" data-cursor>E-Mail</a>
+        </div>
+      </div>
+      <div class="foot-cols">
+        <div class="foot-col">
+          <p class="foot-col-title">Leistungen</p>
+          <div class="foot-col-links">
+            <a href="/mystery-guest-hotel" data-cursor>Mystery Guest für Hotels</a>
+            <a href="/hotel-audit" data-cursor>Hotel-Audit für Hotelgruppen</a>
+            <a href="/hotelbewertung-reiseagenturen" data-cursor>Für Reiseagenturen &amp; Corporate Travel</a>
+          </div>
+        </div>
+        <div class="foot-col">
+          <p class="foot-col-title">Ratgeber</p>
+          <div class="foot-col-links">
+            <a href="/ratgeber/was-ist-ein-mystery-guest" data-cursor>Was ist ein Mystery Guest im Hotel? Ablauf, Kosten und Nutzen</a>
+            <a href="/ratgeber/servicequalitaet-im-hotel-messen" data-cursor>Servicequalität im Hotel messen</a>
+            <a href="/ratgeber/mystery-check-vs-online-bewertungen" data-cursor>Mystery Check oder Online-Bewertungen</a>
+          </div>
+        </div>
+      </div>
+      <div class="foot-legal">
+        <p class="copyright">© 2026 Velvet Check · Berlin · Independent Luxury Hotel Testing</p>
+        <div class="legal-links">
+          <a href="/impressum" data-cursor>Impressum</a>
+          <a href="/datenschutz" data-cursor>Datenschutz</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</main>
+
+<div class="cur-ring" id="curRing"></div>
+<div class="cur-dot" id="curDot"></div>
+
+<script src="/assets/three.min.js"></script>
+<script src="/assets/site.js?v=06188c5e"></script>
+</body>
+</html>
