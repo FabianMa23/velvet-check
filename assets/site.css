@@ -270,3 +270,5 @@ body.is-loaded .hero-block{opacity:1;transform:translateY(0);}
 
 /* ---------- readability over the moving background ---------- */
 .hero-sub,.sec-head .sub,.faq-a p,.contact .sub,.story .text,.eyebrow,.stat .l,.audience,.nav-links a,.foot-links a,.copyright,.foot-legal .legal-links a,.plans-note,.contact .direct{text-shadow:0 1px 14px rgba(8,8,11,.7),0 0 2px rgba(8,8,11,.5);}
+.hero-title,.page-title,.h-sec,.contact h2,.accent,.gold,.stat .v{text-shadow:0 2px 18px rgba(8,8,11,.75),0 0 3px rgba(8,8,11,.55);}
+@media (max-width:860px){ .hero-title .gold,.page-title .gold,.accent,.stat .v{color:var(--gold-bright);} }
