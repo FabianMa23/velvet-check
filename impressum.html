@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Impressum — Velvet Check</title>
+<meta name="description" content="Impressum von Velvet Check, Berlin.">
+<meta name="theme-color" content="#08080b">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+
+<canvas id="gl"></canvas>
+<div class="scrim"></div>
+<div class="grain"></div>
+
+<header class="nav" id="nav">
+  <a class="brand" href="/" data-cursor>
+    <span class="mark"></span><span class="word">VELVET CHECK</span>
+  </a>
+  <nav class="nav-links">
+    <a href="/#prozess" data-cursor class="active">Prozess</a>
+    <a href="/#kriterien" data-cursor class="active">Kriterien</a>
+    <a href="/#pakete" data-cursor class="active">Pakete</a>
+    <a href="/ueber-uns" data-cursor>Über uns</a>
+    <a href="/#kontakt" data-cursor class="active">Kontakt</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" data-cursor aria-label="Menü öffnen">Menü <span class="bars"><span></span><span></span></span></button>
+</header>
+
+<nav class="overlay" id="overlay" aria-hidden="true">
+  <button class="close" id="closeBtn" data-cursor>Schließen</button>
+  <a href="/#prozess" class="ov-link" data-cursor>Prozess</a>
+  <a href="/#kriterien" class="ov-link" data-cursor>Kriterien</a>
+  <a href="/#pakete" class="ov-link" data-cursor>Pakete</a>
+  <a href="/ueber-uns" class="ov-link" data-cursor>Über uns</a>
+  <a href="/#kontakt" class="ov-link" data-cursor>Kontakt</a>
+</nav>
+
+<main class="wrap" id="top">
+  <section class="page-hero pad">
+    <div class="narrow" style="width:100%">
+      <p class="eyebrow line-before" style="margin-bottom:1.6rem">Rechtliches</p>
+      <h1 class="page-title">Impressum</h1>
+    </div>
+  </section>
+
+  <section class="pad" style="padding-top:clamp(2rem,5vh,3rem);padding-bottom:clamp(4rem,10vh,7rem)">
+    <div class="narrow">
+      <div class="legal">
+        <div class="block">
+          <span class="label">Angaben gemäß § 5 DDG</span>
+          <p>Fabian Matthies<br>Velvet Check<br>Rigaerstraße 18B<br>10247 Berlin</p>
+        </div>
+        <div class="block">
+          <span class="label">Kontakt</span>
+          <p>E-Mail: <a href="mailto:hello@velvetcheck.de" data-cursor>hello@velvetcheck.de</a><br>Telefon: +49 155 10084711</p>
+        </div>
+        <div class="block">
+          <span class="label">Umsatzsteuer</span>
+          <p>Kleinunternehmer gemäß § 19 UStG – es wird keine Umsatzsteuer ausgewiesen.</p>
+        </div>
+        <div class="block">
+          <span class="label">Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</span>
+          <p>Fabian Matthies<br>Rigaerstraße 18B, 10247 Berlin</p>
+        </div>
+        <div class="block">
+          <span class="label">Verbraucherstreitbeilegung</span>
+          <p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
+        </div>
+        <div class="block">
+          <span class="label">Haftung für Inhalte</span>
+          <p>Als Diensteanbieter sind wir gemäß § 7 Abs. 1 DDG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 DDG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt.</p>
+        </div>
+        <div class="block">
+          <span class="label">Haftung für Links</span>
+          <p>Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="foot pad">
+    <div class="narrow">
+      <div class="foot-grid">
+        <a class="foot-brand" href="/" style="text-decoration:none;color:inherit" data-cursor><span class="mark"></span><span class="word">VELVET CHECK</span></a>
+        <div class="foot-links">
+          <a href="/#prozess" data-cursor>Prozess</a>
+          <a href="/#kriterien" data-cursor>Kriterien</a>
+          <a href="/#pakete" data-cursor>Pakete</a>
+          <a href="/ueber-uns" data-cursor>Über uns</a>
+          <a href="/#kontakt" data-cursor>Kontakt</a>
+          <a href="mailto:hello@velvetcheck.de" data-cursor>E-Mail</a>
+        </div>
+      </div>
+      <div class="foot-legal">
+        <p class="copyright">© 2026 Velvet Check · Berlin · Independent Luxury Hotel Testing</p>
+        <div class="legal-links">
+          <a href="/impressum" data-cursor>Impressum</a>
+          <a href="/datenschutz" data-cursor>Datenschutz</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</main>
+
+<div class="cur-ring" id="curRing"></div>
+<div class="cur-dot" id="curDot"></div>
+
+<script src="/assets/three.min.js"></script>
+<script src="/assets/site.js"></script>
+</body>
+</html>

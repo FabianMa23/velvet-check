@@ -1,21 +1,257 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Velvet Check – Independent Luxury Hotel Testing</title>
-    <meta name="description" content="Velvet Check ist der unabhängige Mystery-Guest-Service für Luxushotels. Standardisiert, diskret und buchbar bis 24 Stunden vorher. 130+ Datenpunkte. 6 Kategorien. 1 Score." />
-    <meta name="keywords" content="Luxushotel, Hotelbewertung, Mystery Guest, Hotel Testing, Berlin, Qualitätsprüfung" />
-    <meta property="og:title" content="Velvet Check – Independent Luxury Hotel Testing" />
-    <meta property="og:description" content="Der unabhängige Mystery-Guest-Service für Luxushotels. 130+ Datenpunkte. Buchbar bis 24h vorher." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://velvetcheck.de" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="theme-color" content="#0A0A0A" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Velvet Check — Independent Luxury Hotel Testing</title>
+<meta name="description" content="Velvet Check ist der unabhängige Mystery-Guest-Service für Luxushotels. 130+ Datenpunkte, 6 Kategorien, 1 Score. Standardisiert, diskret, buchbar bis 24 Stunden vorher.">
+<meta name="theme-color" content="#08080b">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+
+<canvas id="gl"></canvas>
+<div class="scrim"></div>
+<div class="grain"></div>
+
+<header class="nav" id="nav">
+  <a class="brand" href="/" data-cursor>
+    <span class="mark"></span><span class="word">VELVET CHECK</span>
+  </a>
+  <nav class="nav-links">
+    <a href="/#prozess" data-cursor class="active">Prozess</a>
+    <a href="/#kriterien" data-cursor class="active">Kriterien</a>
+    <a href="/#pakete" data-cursor class="active">Pakete</a>
+    <a href="/ueber-uns" data-cursor>Über uns</a>
+    <a href="/#kontakt" data-cursor class="active">Kontakt</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" data-cursor aria-label="Menü öffnen">Menü <span class="bars"><span></span><span></span></span></button>
+</header>
+
+<nav class="overlay" id="overlay" aria-hidden="true">
+  <button class="close" id="closeBtn" data-cursor>Schließen</button>
+  <a href="/#prozess" class="ov-link" data-cursor>Prozess</a>
+  <a href="/#kriterien" class="ov-link" data-cursor>Kriterien</a>
+  <a href="/#pakete" class="ov-link" data-cursor>Pakete</a>
+  <a href="/ueber-uns" class="ov-link" data-cursor>Über uns</a>
+  <a href="/#kontakt" class="ov-link" data-cursor>Kontakt</a>
+</nav>
+
+<main class="wrap" id="top">
+  <!-- HERO -->
+  <section class="hero pad">
+    <p class="eyebrow line-before">Independent Luxury Hotel Testing</p>
+    <h1 class="hero-title">
+      <span class="line"><span class="line-inner">Wissen Sie wirklich,</span></span>
+      <span class="line"><span class="line-inner">wie Ihr <span class="gold">Hotel erlebt</span></span></span>
+      <span class="line"><span class="line-inner">wird?</span></span>
+    </h1>
+    <div class="hero-block">
+      <p class="hero-sub">Velvet Check ist der unabhängige Mystery-Guest-Service für Luxushotels. Standardisiert, diskret und buchbar bis 24 Stunden vorher.</p>
+      <div class="hero-cta">
+        <a href="#kontakt" class="btn" data-cursor>Jetzt anfragen</a>
+        <a href="#prozess" class="btn ghost" data-cursor>So funktioniert's</a>
+      </div>
+    </div>
+    <div class="hero-stats hero-block">
+      <div class="stat"><span class="v">130+</span><span class="l">Datenpunkte</span></div>
+      <div class="stat"><span class="v">24h</span><span class="l">Vorlauf genügt</span></div>
+      <div class="stat"><span class="v">48h</span><span class="l">Report-Lieferung</span></div>
+      <div class="stat"><span class="v">6</span><span class="l">Bewertungskategorien</span></div>
+    </div>
+    <div class="audience hero-block">
+      <span class="cap">Für Hotels, Agenturen &amp; Unternehmen in Berlin</span>
+      <div class="tags">
+        <span>Boutique Hotels</span><span>Luxury Resorts</span><span>Travel Agencies</span><span>Corporate Travel</span><span>Event Planner</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROZESS -->
+  <section class="section pad" id="prozess">
+    <div class="narrow">
+      <div class="sec-head reveal">
+        <p class="eyebrow">Der Prozess</p>
+        <h2 class="h-sec">Vier Schritte zum <span class="accent">Velvet Score</span></h2>
+      </div>
+      <div class="steps">
+        <div class="step reveal"><span class="n">01</span><span class="t">Anfrage</span><span class="d">Buchbar bis 24h vorher. Wählen Sie Ihr Paket und den Zeitraum.</span></div>
+        <div class="step reveal"><span class="n">02</span><span class="t">Mystery Visit</span><span class="d">Anonymer Check-in. Systematische Bewertung aller Touchpoints.</span></div>
+        <div class="step reveal"><span class="n">03</span><span class="t">Analyse</span><span class="d">130+ Datenpunkte werden ausgewertet und benchmarked.</span></div>
+        <div class="step reveal"><span class="n">04</span><span class="t">Report</span><span class="d">Detaillierter Velvet Report mit Score, Fotos und Empfehlungen.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KRITERIEN -->
+  <section class="section pad" id="kriterien">
+    <div class="narrow">
+      <div class="sec-head reveal">
+        <p class="eyebrow">Bewertungssystem</p>
+        <h2 class="h-sec">Was wir <span class="accent">prüfen</span></h2>
+        <p class="sub">Sechs gewichtete Kategorien ergeben den Velvet Score, vergleichbar über alle Hotels.</p>
+      </div>
+      <div class="cats">
+        <div class="cat-card reveal" style="--w:15%"><div class="row"><span class="name">Ankunft &amp; Empfang</span><span class="pct">15%</span></div><div class="bar"><span class="fill"></span></div></div>
+        <div class="cat-card reveal" style="--w:25%"><div class="row"><span class="name">Zimmer &amp; Suite</span><span class="pct">25%</span></div><div class="bar"><span class="fill"></span></div></div>
+        <div class="cat-card reveal" style="--w:25%"><div class="row"><span class="name">Service &amp; Personal</span><span class="pct">25%</span></div><div class="bar"><span class="fill"></span></div></div>
+        <div class="cat-card reveal" style="--w:15%"><div class="row"><span class="name">Gastronomie</span><span class="pct">15%</span></div><div class="bar"><span class="fill"></span></div></div>
+        <div class="cat-card reveal" style="--w:10%"><div class="row"><span class="name">Wellness &amp; Extras</span><span class="pct">10%</span></div><div class="bar"><span class="fill"></span></div></div>
+        <div class="cat-card reveal" style="--w:10%"><div class="row"><span class="name">Digitales Erlebnis</span><span class="pct">10%</span></div><div class="bar"><span class="fill"></span></div></div>
+      </div>
+
+      <div class="tiers reveal">
+        <span class="lab">Velvet Score Stufen</span>
+        <div class="chips">
+          <span class="chip"><span class="dot"></span>Standard · 0–59</span>
+          <span class="chip"><span class="dot"></span>Excellent · 60–79</span>
+          <span class="chip"><span class="dot"></span>Exceptional · 80–94</span>
+          <span class="chip top"><span class="dot"></span>Velvet Class · 95–100</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIAL -->
+  <section class="quote-sec pad">
+    <div class="narrow">
+      <div class="quote reveal">
+        <p>„Die Detailtiefe des Reports hat uns geholfen, echte Schwachstellen zu finden.&ldquo;</p>
+        <span class="who">— GM, Boutique Hotel Mitte</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAKETE -->
+  <section class="section pad" id="pakete">
+    <div class="narrow">
+      <div class="sec-head reveal">
+        <p class="eyebrow">Pakete</p>
+        <h2 class="h-sec">Investition in <span class="accent">Qualität</span></h2>
+      </div>
+      <div class="plans">
+        <div class="plan reveal">
+          <span class="name">Quick Check</span>
+          <span class="desc">Mystery Visit mit Kernbewertung</span>
+          <span class="price"><span class="ab">ab</span>€890</span>
+          <div class="sep"></div>
+          <ul>
+            <li>1 Übernachtung</li>
+            <li>6 Kategorien bewertet</li>
+            <li>20+ Fotos</li>
+            <li>Report in 48h</li>
+          </ul>
+          <a href="#kontakt" class="btn ghost" data-cursor>Anfragen</a>
+        </div>
+        <div class="plan featured reveal">
+          <span class="tag">★ Empfohlen</span>
+          <span class="name">Deep Dive</span>
+          <span class="desc">Umfassender 2-Nächte-Test</span>
+          <span class="price"><span class="ab">ab</span>€1.690</span>
+          <div class="sep"></div>
+          <ul>
+            <li>2 Übernachtungen</li>
+            <li>Detailanalyse + Video</li>
+            <li>Interaktiver Report</li>
+            <li>30-Min Debrief-Call</li>
+          </ul>
+          <a href="#kontakt" class="btn" data-cursor>Anfragen</a>
+        </div>
+        <div class="plan reveal">
+          <span class="name">Full Audit</span>
+          <span class="desc">Strategische Qualitätsanalyse</span>
+          <span class="price"><span class="ab">ab</span>€2.890</span>
+          <div class="sep"></div>
+          <ul>
+            <li>2–3 Übernachtungen</li>
+            <li>Wettbewerber-Benchmark</li>
+            <li>Management-Präsentation</li>
+            <li>Follow-up nach 3 Mon.</li>
+          </ul>
+          <a href="#kontakt" class="btn ghost" data-cursor>Anfragen</a>
+        </div>
+      </div>
+      <p class="plans-note reveal">Alle Preise zzgl. MwSt. · Übernachtungskosten inklusive · Individuelle Pakete auf Anfrage</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section pad" id="faq">
+    <div class="narrow">
+      <div class="sec-head reveal">
+        <p class="eyebrow">FAQ</p>
+        <h2 class="h-sec">Häufige Fragen</h2>
+      </div>
+      <div class="faq-list reveal">
+        <div class="faq-item">
+          <button class="faq-q" data-cursor>Wie kurzfristig kann ich buchen? <span class="pm">+</span></button>
+          <div class="faq-a"><p>Bis 24 Stunden vor dem gewünschten Aufenthalt. Sie wählen Paket und Zeitraum, den Rest übernehmen wir.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" data-cursor>Merkt das Hotel, dass es getestet wird? <span class="pm">+</span></button>
+          <div class="faq-a"><p>Nein. Unsere Tester checken anonym als reguläre Gäste ein. Niemand im Haus weiß von der Prüfung außer Ihnen.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" data-cursor>Für wen ist Velvet Check? <span class="pm">+</span></button>
+          <div class="faq-a"><p>Für Boutique-Hotels, Luxusresorts, Reiseagenturen, Corporate Travel und Eventplaner, die wissen wollen, wie ihr Anspruch in der Realität ankommt.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" data-cursor>Was ist der Velvet Score? <span class="pm">+</span></button>
+          <div class="faq-a"><p>Ein einzelner Wert von 0 bis 100, der sich aus sechs gewichteten Kategorien ergibt und über alle Hotels vergleichbar ist. Die Stufen reichen von Standard (0–59) über Excellent (60–79) und Exceptional (80–94) bis Velvet Class (95–100).</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" data-cursor>Was kostet ein Velvet Check? <span class="pm">+</span></button>
+          <div class="faq-a"><p>Ab 890 Euro für den Quick Check. Übernachtungskosten sind inklusive, alle Preise verstehen sich zzgl. MwSt. Individuelle Pakete auf Anfrage.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAKT -->
+  <section class="contact pad" id="kontakt">
+    <div class="narrow">
+      <p class="eyebrow reveal">Bereit?</p>
+      <h2 class="reveal">Starten Sie Ihren ersten <span class="accent">Velvet Check</span></h2>
+      <p class="sub reveal">Hinterlassen Sie Ihre E-Mail und wir melden uns innerhalb von 24 Stunden mit einem individuellen Angebot.</p>
+      <div class="contact-form reveal">
+        <input id="emailInput" type="email" placeholder="ihre@email.de" aria-label="E-Mail-Adresse">
+        <button id="anfragenBtn" class="btn" data-cursor>Anfragen</button>
+      </div>
+      <p class="direct reveal">Oder direkt: <a href="mailto:hello@velvetcheck.de" data-cursor>hello@velvetcheck.de</a></p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="foot pad">
+    <div class="narrow">
+      <div class="foot-grid">
+        <a class="foot-brand" href="/" style="text-decoration:none;color:inherit" data-cursor><span class="mark"></span><span class="word">VELVET CHECK</span></a>
+        <div class="foot-links">
+          <a href="/#prozess" data-cursor>Prozess</a>
+          <a href="/#kriterien" data-cursor>Kriterien</a>
+          <a href="/#pakete" data-cursor>Pakete</a>
+          <a href="/ueber-uns" data-cursor>Über uns</a>
+          <a href="/#kontakt" data-cursor>Kontakt</a>
+          <a href="mailto:hello@velvetcheck.de" data-cursor>E-Mail</a>
+        </div>
+      </div>
+      <div class="foot-legal">
+        <p class="copyright">© 2026 Velvet Check · Berlin · Independent Luxury Hotel Testing</p>
+        <div class="legal-links">
+          <a href="/impressum" data-cursor>Impressum</a>
+          <a href="/datenschutz" data-cursor>Datenschutz</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</main>
+
+<div class="cur-ring" id="curRing"></div>
+<div class="cur-dot" id="curDot"></div>
+
+<script src="/assets/three.min.js"></script>
+<script src="/assets/site.js"></script>
+</body>
 </html>

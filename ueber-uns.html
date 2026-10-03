@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Über uns — Velvet Check</title>
+<meta name="description" content="Wer hinter Velvet Check steht: unabhängiges Mystery-Guest-Testing für Luxushotels aus Berlin. Unsere Geschichte, Werte und unser Team.">
+<meta name="theme-color" content="#08080b">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+
+<canvas id="gl"></canvas>
+<div class="scrim"></div>
+<div class="grain"></div>
+
+<header class="nav" id="nav">
+  <a class="brand" href="/" data-cursor>
+    <span class="mark"></span><span class="word">VELVET CHECK</span>
+  </a>
+  <nav class="nav-links">
+    <a href="/#prozess" data-cursor>Prozess</a>
+    <a href="/#kriterien" data-cursor>Kriterien</a>
+    <a href="/#pakete" data-cursor>Pakete</a>
+    <a href="/ueber-uns" data-cursor class="active">Über uns</a>
+    <a href="/#kontakt" data-cursor>Kontakt</a>
+  </nav>
+  <button class="menu-btn" id="menuBtn" data-cursor aria-label="Menü öffnen">Menü <span class="bars"><span></span><span></span></span></button>
+</header>
+
+<nav class="overlay" id="overlay" aria-hidden="true">
+  <button class="close" id="closeBtn" data-cursor>Schließen</button>
+  <a href="/#prozess" class="ov-link" data-cursor>Prozess</a>
+  <a href="/#kriterien" class="ov-link" data-cursor>Kriterien</a>
+  <a href="/#pakete" class="ov-link" data-cursor>Pakete</a>
+  <a href="/ueber-uns" class="ov-link" data-cursor>Über uns</a>
+  <a href="/#kontakt" class="ov-link" data-cursor>Kontakt</a>
+</nav>
+
+<main class="wrap" id="top">
+  <!-- HERO -->
+  <section class="page-hero pad">
+    <div class="narrow" style="width:100%">
+      <p class="eyebrow line-before reveal" style="margin-bottom:1.6rem">Über uns</p>
+      <h1 class="page-title reveal">Unabhängig. Diskret. <span class="gold">Aus Leidenschaft für Gastgeberschaft.</span></h1>
+      <p class="hero-sub reveal" style="margin-top:1.8rem;margin-bottom:0">Velvet Check macht sichtbar, was Gäste wirklich erleben – mit einer festen Methodik, geschulten Testern und Ergebnissen, auf die sich Hotels, Agenturen und Unternehmen verlassen können.</p>
+    </div>
+  </section>
+
+  <!-- STORY -->
+  <section class="section pad" id="geschichte">
+    <div class="narrow">
+      <div class="sec-head reveal">
+        <p class="eyebrow">Unsere Geschichte</p>
+        <h2 class="h-sec">Warum es <span class="accent">Velvet Check</span> gibt</h2>
+      </div>
+      <div class="story">
+        <div class="text reveal">
+          <p>Online-Bewertungen sind laut, subjektiv und oft Wochen alt. Interne Audits wiederum sehen ein Hotel so, wie es sich zeigen möchte – nicht so, wie ein Gast es erlebt.</p>
+          <p>Genau in dieser Lücke arbeitet Velvet Check. Wir checken anonym ein, prüfen jeden Touchpoint von der Anreise bis zum Check-out und übersetzen das Erlebnis in einen vergleichbaren Score.</p>
+          <p>Unsere Mission: Luxus messbar machen. Damit gute Häuser wissen, was sie auszeichnet – und genau sehen, wo noch Potenzial liegt.</p>
+        </div>
+        <div class="quote reveal">
+          <p>„Ein Hotel ist nur so gut wie der Moment, in dem der Gast die Tür öffnet.&ldquo;</p>
+          <span class="who">— Velvet Check Leitgedanke</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WERTE -->
+  <section class="section pad" id="werte">
+    <div class="narrow">
+      <div class="sec-head reveal">
+        <p class="eyebrow">Unsere Werte</p>
+        <h2 class="h-sec">Wofür wir <span class="accent">stehen</span></h2>
+      </div>
+      <div class="values">
+        <div class="step reveal"><span class="n">01</span><span class="t">Unabhängigkeit</span><span class="d">Wir sind keinem Hotel, keiner Kette und keiner Plattform verpflichtet. Unser Urteil ist nicht käuflich – nur buchbar.</span></div>
+        <div class="step reveal"><span class="n">02</span><span class="t">Diskretion</span><span class="d">Unsere Tester checken als ganz normale Gäste ein. Ergebnisse gehören ausschließlich unseren Auftraggebern.</span></div>
+        <div class="step reveal"><span class="n">03</span><span class="t">Standardisierung</span><span class="d">130+ Datenpunkte in 6 gewichteten Kategorien. Jeder Check folgt derselben Methodik – deshalb sind Scores vergleichbar.</span></div>
+        <div class="step reveal"><span class="n">04</span><span class="t">Konstruktive Ergebnisse</span><span class="d">Keine Kritik um der Kritik willen, sondern konkrete Empfehlungen, die Ihr Team sofort umsetzen kann.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="section pad" id="team">
+    <div class="narrow">
+      <div class="sec-head reveal">
+        <p class="eyebrow">Team</p>
+        <h2 class="h-sec">Die Menschen hinter dem <span class="accent">Score</span></h2>
+      </div>
+      <div class="team">
+        <!-- TODO: Bio prüfen. Für ein Foto das "FM" ersetzen durch: <img src="/assets/team/fabian.jpg" alt="Fabian Matthies"> -->
+        <div class="person reveal">
+          <div class="avatar" aria-hidden="true">FM</div>
+          <div>
+            <p class="name">Fabian Matthies</p>
+            <p class="role">Gründer · Berlin</p>
+            <p class="bio">Fabian hat Velvet Check gegründet, weil zwischen Sternebewertung und echtem Gasterlebnis oft eine Lücke klafft. Er verantwortet Methodik, Qualität und jede Kundenbeziehung persönlich.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="contact pad">
+    <div class="narrow">
+      <p class="eyebrow reveal">Lernen wir uns kennen</p>
+      <h2 class="reveal">Bereit für Ihren ersten <span class="accent">Velvet Check?</span></h2>
+      <p class="sub reveal">Wir melden uns innerhalb von 24 Stunden mit einem individuellen Angebot.</p>
+      <div class="reveal"><a href="/#kontakt" class="btn" data-cursor>Jetzt anfragen</a></div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="foot pad">
+    <div class="narrow">
+      <div class="foot-grid">
+        <a class="foot-brand" href="/" style="text-decoration:none;color:inherit" data-cursor><span class="mark"></span><span class="word">VELVET CHECK</span></a>
+        <div class="foot-links">
+          <a href="/#prozess" data-cursor>Prozess</a>
+          <a href="/#kriterien" data-cursor>Kriterien</a>
+          <a href="/#pakete" data-cursor>Pakete</a>
+          <a href="/ueber-uns" data-cursor>Über uns</a>
+          <a href="/#kontakt" data-cursor>Kontakt</a>
+          <a href="mailto:hello@velvetcheck.de" data-cursor>E-Mail</a>
+        </div>
+      </div>
+      <div class="foot-legal">
+        <p class="copyright">© 2026 Velvet Check · Berlin · Independent Luxury Hotel Testing</p>
+        <div class="legal-links">
+          <a href="/impressum" data-cursor>Impressum</a>
+          <a href="/datenschutz" data-cursor>Datenschutz</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</main>
+
+<div class="cur-ring" id="curRing"></div>
+<div class="cur-dot" id="curDot"></div>
+
+<script src="/assets/three.min.js"></script>
+<script src="/assets/site.js"></script>
+</body>
+</html>
